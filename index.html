@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/fa9124eacc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Burhani Works</title>
+  </head>
+  <body>
+    <!-- <span id="circle" class="circle"></span> -->
+
+    <!-- social media handle starts -->
+    <div class="social-handle-fixed">
+      <ul>
+        <li><a id="facebook" href="#"><i class="bi bi-facebook"></i> @burhaniWorks</a></li>
+        <li><a id="instagram" href="#"><i class="bi bi-instagram"></i> @burhani_works</a></li>
+        <li><a id="whatsapp" href="#"><i class="bi bi-whatsapp"></i> +916232705352</a></li>
+      </ul>
+    </div>
+    <!-- social media handle ends -->
+
+    <!-- header starts -->
+    <header class="header">
+      <!-- nav bar and menu starts here -->
+      <div class="navbar-main">
+        <div class="navbar-logo">
+          <div class="logo-text">BURHANI WORKS</div>
+          <div class="logo-image"><img src="img/logo.png" alt="" /></div>
+        </div>
+        <div class="navbar-toggle-area">
+          <div class="navbar-toggle-button">
+            <label for="menu-control" class="hamburger">
+              <i class="hamburger__icon"></i>
+              <i class="hamburger__icon"></i>
+              <i class="hamburger__icon"></i>
+            </label>
+          </div>
+        </div>
+        <input type="checkbox" id="menu-control" class="menu-control" />
+        <aside class="sidebar">
+          <nav class="sidebar__menu">
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Services</a>
+            <a href="">Products</a>
+            <a href="">Contact</a>
+          </nav>
+          <label for="menu-control" class="sidebar__close"></label>
+        </aside>
+      </div>
+      <!-- nav bar and menu ends here -->
+
+      <!-- header main content starts here -->
+      <div class="header-content">
+        <div class="header-name">Welcome To <span>Burhani Works</span></div>
+        <div class="header-qoute">
+          Good design’s not about what medium you’re working in. It’s about
+          thinking hard about what you want to do and what you have to work with
+          before you start. <span>- Susan Kare</span>
+        </div>
+        <a class="button header-button" href="#">View More</a>
+      </div>
+      <!-- header main content ends here -->
+
+    </header>
+    <!-- header ends here -->
+
+
+    <!-- section work of our work starts here -->
+    <section class="details-section-1" id="our-work">
+      <span class="section-1-heading">The Way We Work</span>
+      <!-- first category-group starts here -->
+      <div class="category-group">
+        <span class="group-heading">Exterior Designing</span>
+        <div class="work-cards-group">
+          <div class="card-img"><img src="img/work/final/ext_1.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/ext_2.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/ext_3.png" alt="exterior 1" /></div>
+        </div>
+      </div>
+      <!-- first category-group ends here -->
+
+      <!-- second category-group starts here -->
+      <div class="category-group">
+        <span class="group-heading">interior Designing</span>
+        <div class="work-cards-group">
+          <div class="card-img"><img src="img/work/final/int_1.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/int_2.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/int_3.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/int_4.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/int_5.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/int_6.png" alt="exterior 1" /></div>
+        </div>
+      </div>
+      <!-- second category-group ends here -->
+
+
+      <!-- third category-group starts here -->
+      <div class="category-group">
+        <span class="group-heading">Products Designing</span>
+        <div class="work-cards-group">
+          <div class="card-img"><img src="img/work/final/pro_1.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/pro_2.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/pro_3.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/pro_4.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/pro_5.png" alt="exterior 1" /></div>
+          <div class="card-img"><img src="img/work/final/pro_6.png" alt="exterior 1" /></div>
+        </div>
+      </div>
+      <!-- third category-group ends here -->
+
+    </section>
+    <!-- section work of our work ends here -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var mouseX = 0,
+          mouseY = 0;
+        var xp = 0,
+          yp = 0;
+
+        $(document).mousemove(function (e) {
+          mouseX = e.pageX - 30;
+          mouseY = e.pageY - 30;
+        });
+
+        setInterval(function () {
+          xp += (mouseX - xp) / 6;
+          yp += (mouseY - yp) / 6;
+          $("#circle").css({ left: xp + "px", top: yp + "px" });
+        }, 20);
+      });
+    </script>
+  </body>
+</html>
