@@ -1,0 +1,9 @@
+Services
+3D Modeling <i class='bx bx-cube-alt'></i>
+3D architecture <i class='bx bx-building-house'></i>
+3D ANIMATION <i class='bx bx-camera-movie' ></i>
+DIGITAL MARKETING <i class='bx bxl-instagram'></i>
+WEBDESIGNING <i class='bx bx-desktop' ></i>
+COMMERCIAL PRODUCT PHOTOGRAPHY <i class='bx bxs-camera' ></i>
+VIDEO EDITING <i class='bx bx-video-recording' ></i>
+ECOMMERCE PHOTO EDITING <i class='bx bxl-shopify' ></i>
