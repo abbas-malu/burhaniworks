@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: logo-fonts;
-  src: url("fonts/nasalization-rg.otf");
+  src: url("fonts/nasalization-rg.otf"); 
 }
 @font-face {
   font-family: signature;
@@ -892,9 +892,136 @@ footer{
   .navbar-logo {
     width: 50%;
   }
+  /* .header-name{
+
+  } */
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 992px) {
   .navbar-logo {
-    width: 70%;
+    width: 50%;
+  }
+  .header-name{
+    margin: 150px auto 10px 50px;
+    font-size: 35px;
+  }
+  .header-qoute{
+    margin: 10px auto 10px 50px;
+    text-align: left;
+  }
+  .button:link,.button:visited{
+    margin: 20px auto 10px 50px;
+  }
+  .navbar-main{
+    position: fixed;
+    z-index: 10000;
+  }
+  .scroll-navbar-fix{
+    display: none;
+    transform: translateX(-100%);
+  }
+  .details-section-1{
+    max-width: 240px;
+  }
+  .section-1-heading{
+    font-size: 30px;
+  }
+  .work-cards-group{
+    grid-template-columns: auto;
+  }
+  .work-cards-group div img{
+    max-width: 200px;
+  }
+  .group-heading{
+    font-size: 20px;
+    margin: 20px auto;
+  }
+  .work-cards-group div:hover{
+    z-index: 1000;
+    transform: scale(1) rotate(20deg);
+  }
+  .services{
+    max-width: 240px;
+  }
+  .services-heading{
+    font-size: 30px;
+  }
+  .service-card-group{
+    grid-template-columns: auto ;
+  }
+  /* .service-card{
+    width: 100px;
+    height: 120px;
+  } */
+  /* .service-icon{
+    font-size: 50px;
+  }
+  .service-name span{
+    font-size: ;
+  } */
+  .about-us{
+    max-width: 240px;
+
+  }
+  .about-us-heading{
+    font-size: 30px;
+  }
+  .about-us-main-body{
+    margin-top: 20px;
+    grid-template-columns: auto;
+    column-gap: 0;
+  }
+  .about-us-desc{
+    width: 220px;
+    font-size: 10px;
+    margin: 12px ;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .about-us-content{
+
+  }
+  .about-card{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .about-card-image{
+    margin: 20px auto;
+  }
+  .about-card-name{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .contact{
+    max-width: 260px;
+  }
+  .contact-form{
+    padding: 10px;
+  }
+  .contact-us-heading{
+    font-size: 30px;
+  }
+  .contact-body-main{
+    grid-template-columns: 100%;
+  }
+  .form-label{
+    font-size: 12px;
+  }
+  .form-input{
+    font-size: 15px;
+    padding: 10px;
+  }
+  .form-input::placeholder{
+    font-size: 15px;
+  }
+  .contact-details{
+    grid-template-columns: auto;
+  }
+  .footer-container{
+    max-width: 240px;
+    font-size: 10px;
   }
 }
